@@ -1,0 +1,35 @@
+body{
+    display: grid;
+    grid-template-columns:300px auto 400px;
+    grid-template-rows: 50px 50px  auto 100px;
+    grid-template-areas: 
+    "header header header"
+    "nav nav nav"
+    "aleft section aright"
+    "footer footer footer"
+    ;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: gray;
+    grid-area: header;
+}
+
+div{
+    background-color: blue;
+    grid-area: nav;
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    height: 50px;
+}
+
+
+footer{
+    background-color: black;
+    grid-area: footer;
+    position: sticky;
+}
+
