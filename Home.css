@@ -1,35 +1,105 @@
 body{
     display: grid;
-    grid-template-columns:300px auto 400px;
-    grid-template-rows: 50px 50px  auto 100px;
-    grid-template-areas: 
-    "header header header"
-    "nav nav nav"
-    "aleft section aright"
-    "footer footer footer"
-    ;
-    margin: 0;
-    padding: 0;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    /*grid-template-areas: */
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    background-position: absolute;
+    width: 100%;
+    height: 100vh;
+}
+
+.background-content{
+    display: grid;
+    margin: 0px 100px;
+    background: #FEFEFE;
+    height: 100vh;
 }
 
 header{
-    background-color: gray;
-    grid-area: header;
+    border: 3px solid red;
+    background-image: url(icon-user.png);
+    background-repeat: no-repeat;
+    bacground-align: right;
 }
 
-div{
-    background-color: blue;
-    grid-area: nav;
-    position: sticky;
-    top: 0px;
-    width: 100%;
+nav{
+    background: #373433;
     height: 50px;
+    line-height: 50px;
+
 }
 
+.menu{
+    list-style: none;
+}
 
+.menu li{
+    display: inline-block;
+    padding: 0 25px;
+    height: 50px;
+    margin: 0 -2px;
+    border-right: solid 2px black;
+}
+
+.menu li:first-child{
+    border-left: solid 2px black;
+}
+
+.menu li:hover{
+    background: #756E6C;
+}
+
+.menu li a{
+    display: inline-block;
+    height: 50px;
+    text-decoration:none;
+    color: #fff;
+    font-family: Arial;
+    font-size: 32px;
+    text-transform: uppercase;
+}
+
+main{
+    border: 3px solid red;
+    display: grid;
+    grid-template-areas: 
+    "t t"
+    "left right"
+    "aside aside";
+}
+
+.top{
+    grid-area: t;
+    text-align: center;
+    background-image: url(../images/avatar.jpg); 
+
+}
+.left{
+    grid-area: left;
+
+}
+.right{
+    grid-area: right;
+}
+.aside{
+    grid-area: aside;
+}
 footer{
-    background-color: black;
-    grid-area: footer;
-    position: sticky;
+    border: 3px solid red;
+    background-color: #373433;
 }
+
+footer a{
+    text-decoration:none;
+    color: #fff;
+    font-family: Arial;
+    text-transform: capitalize;
+}
+
+*:hover{
+    border: 3px solid green;
+}
+
 
