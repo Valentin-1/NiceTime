@@ -1,0 +1,141 @@
+body{
+    display: grid;
+    /*grid-template-areas: */
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+}
+
+.background-content{
+    display: grid;
+    margin: 0px 100px;
+    background: #FEFEFE;
+    height: 100%;
+}
+
+header{
+    border: 3px solid red;
+    background-repeat: no-repeat;
+    align-self: flex-start;
+}
+
+.hd-container{
+    display: inline-block;
+    margin-left: 90%;
+}
+
+.icon-user{
+}
+
+nav{
+    background: #373433;
+    height: 50px;
+    line-height: 50px;
+}
+
+.menu{
+    list-style: none;
+}
+
+.menu li{
+    display: inline-block;
+    padding: 0 65px;
+    height: 50px;
+    margin: 0 -5px;
+    border-right: solid 2px black;
+}
+
+.menu li:first-child{
+    border-left: solid 2px black;
+}
+
+.menu li:hover{
+    background: #756E6C;
+}
+
+.menu li a{
+    display: inline-block;
+    height: 50px;
+    text-decoration:none;
+    color: #fff;
+    font-family: Arial;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+main{
+    border: 3px solid red;
+    display: grid;
+    grid-template-areas: 
+    "t t"
+    "left right"
+    "aside aside";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 500px 250px;
+}
+
+.top{
+    grid-area: t;
+    text-align: center;
+    background-image: url(img-top.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+}
+
+.left{
+    grid-area: left;
+    background-image: url(img-left.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.right{
+    grid-area: right;
+    background-image: url(img-right.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.aside{
+    grid-area: aside;
+    background-image: url(img-aside.png);
+    background-size: 100% 90%;
+    background-repeat: no-repeat;
+    height: 550px;
+}
+
+footer{
+    border: 3px solid red;
+    background-color: #373433;
+    height: 100px;
+}
+
+footer a{
+    text-decoration:none;
+    color: #fff;
+    font-family: Arial;
+    text-transform: capitalize;
+}
+
+.ft-container{
+    display: flex;
+}
+
+.fr-info, .ft-help, .ft-number{
+    height: 100%;
+}
+
+.ft-help{
+    width: 70%;
+}
+
+.ft-info, .ft-number{
+    width: 15%;
+}
+
+*:hover{
+    border: 3px solid green;
+}
+
