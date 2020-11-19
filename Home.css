@@ -15,7 +15,6 @@ body{
 }
 
 header{
-    border: 3px solid red;
     background-repeat: no-repeat;
     align-self: flex-start;
 }
@@ -23,9 +22,6 @@ header{
 .hd-container{
     display: inline-block;
     margin-left: 90%;
-}
-
-.icon-user{
 }
 
 nav{
@@ -43,11 +39,6 @@ nav{
     padding: 0 65px;
     height: 50px;
     margin: 0 -5px;
-    border-right: solid 2px black;
-}
-
-.menu li:first-child{
-    border-left: solid 2px black;
 }
 
 .menu li:hover{
@@ -65,7 +56,7 @@ nav{
 }
 
 main{
-    border: 3px solid red;
+
     display: grid;
     grid-template-areas: 
     "t t"
@@ -101,13 +92,12 @@ main{
 .aside{
     grid-area: aside;
     background-image: url(img-aside.png);
-    background-size: 100% 90%;
+    background-size: 100% 80%;
     background-repeat: no-repeat;
     height: 550px;
 }
 
 footer{
-    border: 3px solid red;
     background-color: #373433;
     height: 100px;
 }
@@ -133,9 +123,5 @@ footer a{
 
 .ft-info, .ft-number{
     width: 15%;
-}
-
-*:hover{
-    border: 3px solid green;
 }
 
