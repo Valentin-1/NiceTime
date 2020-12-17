@@ -1,7 +1,7 @@
 body{
     display: grid;
     /*grid-template-areas: */
-    background-image: url(background.jpg);
+    background-image: url(Images/background.jpg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
 
@@ -26,7 +26,7 @@ nav{
 
 .menu{
     display: grid;
-    grid-template-columns: repeat(5, auto);
+    grid-template-columns: repeat(4, auto);
 /*  border: 1px solid red;*/
     height: 50px;
     margin-left: 20px;
@@ -61,7 +61,7 @@ main{
 .top{
     grid-area: t;
     text-align: center;
-    background-image: url(img-top.png);
+    background-image: url(Images/img-top.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
 
@@ -69,21 +69,21 @@ main{
 
 .left{
     grid-area: left;
-    background-image: url(img-left.png);
+    background-image: url(Images/img-left.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
 
 .right{
     grid-area: right;
-    background-image: url(img-right.png);
+    background-image: url(Images/img-right.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
 
 .aside{
     grid-area: aside;
-    background-image: url(img-aside.png);
+    background-image: url(Images/img-aside.png);
     background-size: 100% 80%;
     background-repeat: no-repeat;
     height: 550px;
@@ -92,7 +92,7 @@ main{
 #ft-container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    border: 1px solid red;
+/*    border: 1px solid red;*/
     background-color: #373433;
     list-style: none;
 }
